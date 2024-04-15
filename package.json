@@ -1,0 +1,65 @@
+{
+  "name": "test-exchange-api",
+  "version": "1.0.0",
+  "description": "API on multiple exchanges using only on warppipe BOT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:James0x9034/test-exchange-api.git",
+    "build": "tsc"
+  },
+  "keywords": [
+    "warppipe",
+    "crypto",
+    "exchange",
+    "api"
+  ],
+  "author": "anhhvwork",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James0x9034/test-exchange-api/issues"
+  },
+  "homepage": "https://github.com/James0x9034/test-exchange-api#readme",
+  "dependencies": {
+    "@types/json-bigint": "^1.0.4",
+    "axios": "^1.4.0",
+    "bignumber.js": "^9.1.1",
+    "ccxt": "^4.0.9",
+    "crypto-js": "^4.1.1",
+    "gate-api": "^5.45.0",
+    "json-bigint": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.3",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.2",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/lodash": "^4.14.198",
+    "@types/node": "^20.6.5",
+    "@types/uuid": "^9.0.4",
+    "@types/ws": "^8.5.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.50.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "_moduleAliases": {
+    "@modules": "build/modules",
+    "@core": "build/core"
+  }
+}
